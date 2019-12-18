@@ -36,5 +36,5 @@ survival = getxvecAA(bgdataClean,survival,pls,od,odTh) %Gets matrix into surviva
 
 Calcular tasa de muerte exponencial
 ```
-[decayRate] = getExponentialRate(survival);```
+[decayRate] = getExponentialRate(survival);
 ```
