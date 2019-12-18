@@ -25,7 +25,13 @@ Calcular la tasa de crecimiento para cada día de outgrowth
 Calcular survival que contiene .t (con los tiempos en días) y .s (porcentajes de supervivencia)
 ```
 [survival] = getsurv(timeOD,gwrate,pls) %Gets survival percentage matrix
+```
+
+Hay dos opciones para calcular los tiempos con los que se ajusta el modelo exponencial:
+```
 survival = getxvec(bgdataClean,survival,pls,od,odTh) %Gets matrix into survival structure for time at which interpolation was made in days and plots percentage vs time
+
+survival = getxvecAA(bgdataClean,survival,pls,od,odTh) %Gets matrix into survival structure for time at which outgrowth inoculation was made in days and plots percentage vs time
 ```
 
 Calcular tasa de muerte exponencial
